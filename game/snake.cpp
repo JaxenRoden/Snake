@@ -12,6 +12,8 @@ int main() {
 	Pixie background("grass.png", 0, 0, BACKGROUND_PIXIE);
 	background.setScale(2, 2);
 
+	int movingDirection = STATIONARY;
+
 	while (window.isOpen()) {
 		// check all the window's events that were triggered since the last iteration of the loop
 		// For now, we just need this so we can click on the window and close it
@@ -23,7 +25,8 @@ int main() {
 			if (event.type == Event::Closed) // Did the user kill the window by pressing the "X"?
 				window.close();
 		}
-
+		movingDirection = movementDirection(movingDirection, snakeHead);
+		playerMovement(movingDirection, snakeHead);
 		//===========================================================
 		// Everything from here to the end of the loop is where you put your
 		// code to produce ONE frame of the animation. The next iteration of the loop will
