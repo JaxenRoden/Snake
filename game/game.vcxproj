@@ -156,8 +156,8 @@
   <ItemGroup>
     <Image Include="apple.png" />
     <Image Include="grass.png" />
+    <Image Include="snakeHead.png" />
     <Image Include="snakeSegment.bmp" />
-    <Image Include="snakeHead.jpg" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Pixie.h" />
