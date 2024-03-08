@@ -23,16 +23,16 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <Image Include="alien.bmp">
+    <Image Include="apple.png">
       <Filter>Resource Files</Filter>
     </Image>
-    <Image Include="missile.bmp">
+    <Image Include="grass.png">
       <Filter>Resource Files</Filter>
     </Image>
-    <Image Include="ship.png">
+    <Image Include="snakeHead.jpg">
       <Filter>Resource Files</Filter>
     </Image>
-    <Image Include="stars.jpg">
+    <Image Include="snakeSegment.bmp">
       <Filter>Resource Files</Filter>
     </Image>
   </ItemGroup>

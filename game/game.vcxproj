@@ -153,10 +153,10 @@
     <ClCompile Include="snakeFunctions.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <Image Include="alien.bmp" />
-    <Image Include="missile.bmp" />
-    <Image Include="ship.png" />
-    <Image Include="stars.jpg" />
+    <Image Include="apple.png" />
+    <Image Include="grass.png" />
+    <Image Include="snakeSegment.bmp" />
+    <Image Include="snakeHead.jpg" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="snakeHeader.h" />
