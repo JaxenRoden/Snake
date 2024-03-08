@@ -1,7 +1,6 @@
 #include "snakeHeader.h"
 
-int main()
-{
+int main() {
 	// Create the window for graphics.
 	RenderWindow window(VideoMode(WINDOW_WIDTH, WINDOW_HEIGHT), "Snake!");
 	
@@ -13,22 +12,18 @@ int main()
 	Pixie background("grass.png", 0, 0, BACKGROUND_PIXIE);
 	background.setScale(2, 2);
 
-	while (window.isOpen())
-	{
+	while (window.isOpen()) {
 		// check all the window's events that were triggered since the last iteration of the loop
 		// For now, we just need this so we can click on the window and close it
 		Event event;
 
 		// This while loop checks to see if anything happened since last time
 		// we drew the window and all its graphics. 
-		while (window.pollEvent(event))
-		{	
+		while (window.pollEvent(event)) {	
 			if (event.type == Event::Closed) // Did the user kill the window by pressing the "X"?
 				window.close();
-			else if (event.type == Event::KeyPressed) // did the user press a key on the keyboard?
-			{
-				if (event.key.code == Keyboard::Space)
-				{
+			else if (event.type == Event::KeyPressed) { // did the user press a key on the keyboard?
+				if (event.key.code == Keyboard::Space) {
 					
 				}
 			}
