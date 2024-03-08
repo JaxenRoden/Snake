@@ -8,7 +8,7 @@ int main()
 	// Limit the framerate to 60 frames per second
 	window.setFramerateLimit(60);
 
-	
+	Pixie snakeHead("snakeHead.png", 600, 600, SNAKE_HEAD_PIXIE);
 
 	Pixie background("grass.png", 0, 0, BACKGROUND_PIXIE);
 	background.setScale(2, 2);
@@ -40,6 +40,8 @@ int main()
 		// render the next frame, and so on. All this happens ~ 60 times/second.
 		//===========================================================
 		background.draw(window);
+
+		snakeHead.draw(window);
 
 		window.display();
 
