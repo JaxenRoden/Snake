@@ -10,9 +10,9 @@ using namespace std;
 using namespace sf;
 
 // Constants for the game 
-const float DISTANCE = 5.0f; // When the ship moves it moves 5 pixels at a time. 
-const int WINDOW_WIDTH = 1200; // window is 1000 pixels wide
-const int WINDOW_HEIGHT = 1200; // window is 800 pixels vertically "high"
+const float DISTANCE = 58.0f; // When the ship moves it moves 5 pixels at a time. 
+const int WINDOW_WIDTH = 1200; // window is 1200 pixels wide
+const int WINDOW_HEIGHT = 1200; // window is 1200 pixels vertically "high"
 
 // Constants for Pixie Types
 const int UNDEFINED_PIXIE = -1; // Used to determine what object the Pixie holds
