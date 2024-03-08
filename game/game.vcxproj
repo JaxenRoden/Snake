@@ -149,6 +149,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Pixie.cpp" />
     <ClCompile Include="snake.cpp" />
     <ClCompile Include="snakeFunctions.cpp" />
   </ItemGroup>
@@ -159,6 +160,7 @@
     <Image Include="snakeHead.jpg" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Pixie.h" />
     <ClInclude Include="snakeHeader.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
