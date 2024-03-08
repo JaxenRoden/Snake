@@ -22,11 +22,6 @@ int main() {
 		while (window.pollEvent(event)) {	
 			if (event.type == Event::Closed) // Did the user kill the window by pressing the "X"?
 				window.close();
-			else if (event.type == Event::KeyPressed) { // did the user press a key on the keyboard?
-				if (event.key.code == Keyboard::Space) {
-					
-				}
-			}
 		}
 
 		//===========================================================
