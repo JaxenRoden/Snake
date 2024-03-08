@@ -11,14 +11,8 @@ int main() {
 
 	Pixie background("grass.png", 0, 0, BACKGROUND_PIXIE);
 	background.setScale(2, 2);
-<<<<<<< HEAD
 
 	while (window.isOpen()) {
-=======
-	
-	while (window.isOpen())
-	{
->>>>>>> f240bd69eb8549a53fac5573f10ae44e29cf8a63
 		// check all the window's events that were triggered since the last iteration of the loop
 		// For now, we just need this so we can click on the window and close it
 		Event event;
