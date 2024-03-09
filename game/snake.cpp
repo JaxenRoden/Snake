@@ -27,6 +27,7 @@ int main() {
 		}
 		movingDirection = movementDirection(movingDirection, snakeHead);
 		playerMovement(movingDirection, snakeHead);
+		snakeHeadAnimation(snakeHead, movingDirection);
 		//===========================================================
 		// Everything from here to the end of the loop is where you put your
 		// code to produce ONE frame of the animation. The next iteration of the loop will

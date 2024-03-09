@@ -37,4 +37,5 @@ class Pixie;
 //functions in snakeFunctions.cpp
 void playerMovement(int movingDirection, Pixie& player);
 int movementDirection(int direction, Pixie& player);
+void snakeHeadAnimation(Pixie& player, int direction);
 

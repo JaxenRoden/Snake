@@ -26,3 +26,14 @@ int movementDirection(int direction, Pixie& player) {
 		direction = RIGHT;
 	return direction; 
 }
+
+void snakeHeadAnimation(Pixie& player, int direction) {
+	if (direction == UP)
+		player.setTextureSourceFile("snakeHead.png");
+	else if(direction == DOWN)
+		player.setTextureSourceFile("snakeSegment.bmp");
+	else if (direction == RIGHT)
+		player.setTextureSourceFile("snakeHead.png");
+	else if (direction == LEFT)
+		player.setTextureSourceFile("snakeSegment.bmp");
+}
