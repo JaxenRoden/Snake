@@ -1,5 +1,6 @@
 #include "snakeHeader.h"
 
+// Moves the player in the direction they want
 void playerMovement(int movingDirection, Pixie& player) {
 	if (movingDirection == UP) {
 		player.move(0, -DISTANCE);
@@ -15,6 +16,7 @@ void playerMovement(int movingDirection, Pixie& player) {
 	}
 }
 
+// Checks for input from the player and converts it to a direction
 int movementDirection(int direction, Pixie& player) {
 	if (Keyboard::isKeyPressed(Keyboard::W))
 		direction = UP;
@@ -27,13 +29,14 @@ int movementDirection(int direction, Pixie& player) {
 	return direction; 
 }
 
+// Changes the snake head for different directions
 void snakeHeadAnimation(Pixie& player, int direction) {
 	if (direction == UP)
 		player.setTextureSourceFile("snakeHead.png");
 	else if(direction == DOWN)
-		player.setTextureSourceFile("snakeSegment.bmp");
+		player.setTextureSourceFile("snakeSegment.png");
 	else if (direction == RIGHT)
 		player.setTextureSourceFile("snakeHead.png");
 	else if (direction == LEFT)
-		player.setTextureSourceFile("snakeSegment.bmp");
+		player.setTextureSourceFile("snakeSegment.png");
 }

@@ -12,6 +12,7 @@ public:
 	void draw(RenderWindow& window) { window.draw(sprite); } // Draws the Pixie to the screen
 	void move(float x, float y) { sprite.move(x, y); } // Moves the Pixie
 	void setScale(float xScale, float yScale) { sprite.setScale(xScale, yScale); } // Sets the scale of the Pixie
+	void setRotation(float angle) { sprite.setRotation(angle); } // Sets the rotation of the Pixie
 	void setPosition(float x, float y) { sprite.setPosition(x, y); } // Sets the position of the Pixie
 	float getX() { return sprite.getPosition().x; } // Gets the x position of the Pixie
 	float getY() { return sprite.getPosition().y; } // Gets the y position of the Pixie
